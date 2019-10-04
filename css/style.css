@@ -1,0 +1,160 @@
+ *{
+   margin: 0;
+   padding: 0;
+ }
+
+ a{
+   text-decoration: none;
+ }
+
+header{
+  background-image: url(../img/bbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 95vh;
+  background-clip: padding-box;
+}
+
+ #nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vh;
+  transition: .4s;
+  color: #ffffff;
+  transition: 1s;
+  background-color: rgba(66, 66, 66, 0.59);
+ }
+ #nav a{
+     color: #ffffff;
+ }
+
+
+ .navigation{
+   display: flex;
+   box-sizing: border-box;
+   justify-content: space-around;
+ }
+
+ .navigation a{
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+
+ }
+
+ .navigation div{
+   margin-left: 1vw;
+ }
+
+ .soc_networks{
+   box-sizing: border-box;
+   margin-right: 1vw;
+ }
+
+ .soc_networks div:nth-child(1){
+   margin-bottom: 0.5vh;
+ }
+
+ .soc_networks div:nth-child(2){
+   margin-bottom: 1vh;
+ }
+
+ .soc_networks a{
+   font-family: 'Istok Web', sans-serif;
+  font-weight: ;
+ }
+
+ .logo_vesta h1{
+   font-family: 'Bangers', cursive;
+
+   font-size: 3em;
+   position: absolute;
+     top: 4%;
+     left: 50%;
+     transform: translate(-50%, -60%);
+ }
+
+.nav_tool a{
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.nav_tool div{
+  margin-right: 1vw;
+}
+
+
+.nav_tool a:hover{
+  transition: 0.3s;
+  border-bottom: 1px solid #ffffff;;
+}
+
+.header_text{
+  text-align: center;
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.header_text:nth-child(2){
+
+}
+
+.make_order{
+  box-sizing: border-box;
+  padding: 1vh 3vw 1vh 3vw;
+  border-radius: 55px;
+  position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    background-color: rgba(66, 66, 66, 0.80);
+    transition: 1.5s;                                                                                                            ;
+}
+
+
+.make_order:hover{
+  background-color: rgb(255, 255, 255);
+  transition: 1.5s;
+  color: black;
+}
+
+.byus{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.byus_img{
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/byus1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.byus_text1{
+  position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  color: black;
+  font-size: 2rem;
+}
+
+.byus_text1 a{
+  margin-top: 35px;
+}
+
+.byus_text{
+  width: 100%;
+}
