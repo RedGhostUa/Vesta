@@ -9,7 +9,7 @@
 
  header {
    padding-bottom: 94vh;
-   background-image: url(../img/vesta1_bcg.jpg);
+   background-image: url(../img/bcg1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -78,6 +78,7 @@
 .logo_vesta h1{
   margin-left: 5vw;
 font-family: 'Courgette', cursive;
+
 }
 
 .header_text{
@@ -108,7 +109,7 @@ font-family: 'Cuprum', sans-serif;
     font-size: 23px;
     border: 2px solid white;
     background-color: rgba(66, 66, 66, 0);
-    transition: 1.5s;                                                                                                            ;
+    transition: 1.5s;
 }
 
 .make_order a{
@@ -121,20 +122,31 @@ font-family: 'Cuprum', sans-serif;
   transition: 1.5s;
 }
 
-
-.about_us{
-  width: 100vw;
-  box-sizing: border-box;
-  height: 20%;
-}
-
-.about_us h2{
-  font-weight: bold;
+.about_us  h2{
   margin-top: 5vh;
   margin-left: 7vw;
-  font-size: 30px;
+  font-size: 1.7em;
+  border: 1px solid black;
+  width: 7vw;
+}
+
+.services  h2{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 35px;
+}
+
+.content h2{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 1.7em;
+}
+
+.block-caption{
+  font-weight: bold;
   font-family: 'Cuprum', sans-serif;
   color: black;
+  text-align: center;
 }
 
 .about_usphoto{
@@ -162,5 +174,119 @@ font-family: 'Cuprum', sans-serif;
    margin: 19%;
    color: white;
    font-size: 20px;
-   font-family: 'Cuprum', sans-serif;
+   font-family:  sans-serif;
+}
+
+
+.services{
+  margin-top: 100vh;
+  height: 100%;
+  display: block;
+
+}
+
+
+.service_elements{
+display: flex;
+  height: 50vh;
+  margin-bottom: 10vh;
+}
+
+.flip-card {
+  width: 35vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.first-card:nth-child(1){
+  margin-left: 7vw;
+}
+.second-card:nth-child(1){
+  margin-left: 20vw;
+}
+.third-card:nth-child(1){
+  margin-left: 7vw;
+}
+.fourth-card:nth-child(1){
+  margin-left: 20vw;
+}
+.fifth-card:nth-child(1){
+  margin-left: 7vw;
+}
+
+.flip-card-photo{
+  height: 46vh;
+}
+
+
+.flip-card h3{
+  color: white;
+  font-family: 'Cuprum', sans-serif;;
+  font-size: 1.5em;
+  background-color: white;
+  color: black;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #272b2b;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.flip-card-back {
+  background-color: #272b2b;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-red-background{
+  background-color: #ed3f3f;
+}
+
+.service-list{
+  width: 80%;
+  margin-top: 3vh;
+  margin-left: 10%;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.service-list li{
+  margin-bottom: 2vh;
+  list-style-type: square;
+}
+
+.flipLightBox{
+  width: 30vw;
+  height: 30vh;
 }

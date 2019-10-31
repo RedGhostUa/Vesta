@@ -5,7 +5,35 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+<link rel="stylesheet" type="text/css" href="../css/elastislide.css" />
 
+
+<noscript>
+<style>
+  .es-carousel ul{
+    display:block;
+  }
+</style>
+</noscript>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+<div class="rg-image-wrapper">
+  {{if itemsCount > 1}}
+    <div class="rg-image-nav">
+      <a href="#" class="rg-image-nav-prev">Previous Image</a>
+      <a href="#" class="rg-image-nav-next">Next Image</a>
+    </div>
+  {{/if}}
+  <div class="rg-image"></div>
+  <div class="rg-loading"></div>
+  <div class="rg-caption-wrapper">
+    <div class="rg-caption" style="display:none;">
+      <p></p>
+    </div>
+  </div>
+</div>
+</script>
 </head>
 
 <body>
@@ -35,21 +63,261 @@
   </header>
   <main>
     <div class="about_us">
-        <h2> ИДЕЯ </h2>
-        <div class="about_usphoto">
+      <h2 class="block-caption"> ИДЕЯ </h2>
+      <div class="about_usphoto">
 
-        </div>
-        <div class="about_ustext">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+      </div>
+      <div class="about_ustext">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
-
   </main>
 
+  <div class="services">
+    <h2 class="block-caption"> Наши услуги </h2>
+    <div class="service_elements">
+      <div class="flip-card first-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-color: #ed3f3f">
+            <h3>Дизайн и пошив штор/ламбрекенов</h3>
+            <div class="service-list">
+              <ul>
+                <li>
+                  Индивидуальная работа с каждым клиентом
+                </li>
+                <li>
+                  Профессиональный подбор моделей, тканей, аксессуаров под Ваш интерьер
+                </li>
+                <li>
+                  Пошив в специализированном швейном цехе
+                </li>
+                <li>
+                  Оперативная навеска готовых изделий
+                </li>
+                <li>
+                  Широкий диапазон цен
+                </li>
+                <li>
+                  Дизайнерский контроль от начала проекта до его завершения
 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flip-card-back" style="background-color: #ed3f3f">
+            <h3>Дизайн и пошив штор/ламбрекенов</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card flip-card-photo" style="background-image: URL(../img/srv.jpg)">
+
+      </div>
+    </div>
+
+    <div class="service_elements">
+      <div class="flip-card second-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Изготовление текстильных изделий</h3>
+            <div class="service-list">
+              <ul>
+                <li>
+                  Огромный выбор тканей, фурнитуры и аксессуаров для пошива текстильных изделий
+                </li>
+                <li>
+                  Пошив покрывал
+                </li>
+                <li>
+                  Пошив скатертей
+                </li>
+                <li>
+                  Пошив подушек
+                </li>
+                <li>
+                  Пошив чехлов для мебели
+                </li>
+                <li>
+                  Пошив сидушек для стульев, кушеток, скамеек
+
+                </li>
+                <li>
+                  Пошив пуфов по индивидуальному дизайну
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flip-card-back ">
+            <h3>Изготовление текстильных изделий</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card flip-card-photo" style="background-image: URL(../img/srv.jpg)">
+
+      </div>
+    </div>
+    <div class="service_elements">
+      <div class="flip-card third-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-color: #ed3f3f">
+            <h3>Подбор и монтаж карнизов</h3>
+            <div class="service-list">
+              <ul>
+                <li>
+                  Большой выбор карнизов от простых пластиковых до моторизированных на дистанционном пульте управления
+                </li>
+                <li>
+                  Изготовление карнизов с изгибами практически любой сложности для эркерных и арочных окон
+                </li>
+                <li>
+                  Точная порезка длинномерной продукции – труб, пластиковых и металлических профилей, потолочных шин
+                </li>
+                <li>
+                  Сборка готовых комплектов для римских и японских штор по индивидуальному заказу клиента
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="flip-card-back" style="background-color: #ed3f3f">
+            <h3>Подбор и монтаж карнизов</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card flip-card-photo" style="background-image: URL(../img/srv.jpg)">
+
+      </div>
+    </div>
+    <div class="service_elements">
+      <div class="flip-card fourth-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Химчистка штор и тюля</h3>
+            <div class="service-list">
+              <ul>
+                <li>
+                  Профессиональная стирка и химчистка на современном оборудовании
+                </li>
+                <li>
+                  Использование дорогих немецких препаратов
+                </li>
+                <li>
+                  Отсутствие ярко выраженного запаха
+                </li>
+                <li>
+                  Без деформаций, нарушений структуры изделия
+                </li>
+                <li>
+                  Грамотный персонал с опытом работы более 10-ти лет
+                </li>
+                <li>
+                  Профессиональный демонтаж и монтаж изделий
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h3>Химчистка штор и тюля</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card flip-card-photo" style="background-image: URL(../img/srv.jpg)">
+
+      </div>
+    </div>
+    <div class="service_elements">
+
+      <div class="flip-card fifth-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-color: #ed3f3f">
+            <h3>Ролеты</h3>
+            <div class="service-list">
+              <ul>
+                <li>
+                  Индивидуальная работа с каждым клиентом
+                </li>
+                <li>
+                  Профессиональный подбор моделей, тканей, аксессуаров под Ваш интерьер
+                </li>
+                <li>
+                  Пошив в специализированном швейном цехе
+                </li>
+                <li>
+                  Оперативная навеска готовых изделий
+                </li>
+                <li>
+                  Широкий диапазон цен
+                </li>
+                <li>
+                  Дизайнерский контроль от начала проекта до его завершения
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flip-card-back" style="background-color: #ed3f3f">
+            <h3>Ролеты</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card flip-card-photo" style="background-image: URL(../img/srv.jpg)">
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="content">
+<h2 class="block-caption"> Галерея наших работ </h2>
+    <div id="rg-gallery" class="rg-gallery">
+      <div class="rg-thumbs">
+        <!-- Elastislide Carousel Thumbnail Viewer -->
+        <div class="es-carousel-wrapper">
+
+          <div class="es-carousel">
+            <ul>
+              <li><a href="#"><img src="../images/thumbs/1.jpg" data-large="../images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/2.jpg" data-large="../images/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/3.jpg" data-large="../images/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/4.jpg" data-large="../images/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/5.jpg" data-large="../images/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/6.jpg" data-large="../images/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/7.jpg" data-large="../images/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/8.jpg" data-large="../images/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/9.jpg" data-large="../images/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/10.jpg" data-large="../images/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/11.jpg" data-large="../images/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/12.jpg" data-large="../images/12.jpg" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/13.jpg" data-large="../images/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/14.jpg" data-large="../images/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/15.jpg" data-large="../images/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/16.jpg" data-large="../images/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/17.jpg" data-large="../images/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/18.jpg" data-large="../images/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/19.jpg" data-large="../images/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/20.jpg" data-large="../images/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/21.jpg" data-large="../images/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/22.jpg" data-large="../images/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/23.jpg" data-large="../images/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
+              <li><a href="#"><img src="../images/thumbs/24.jpg" data-large="../images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.tmpl.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="../js/gallery.js"></script>
 
 
 
