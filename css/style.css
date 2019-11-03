@@ -7,6 +7,11 @@
    text-decoration: none;
  }
 
+
+body{
+
+}
+
  header {
    padding-bottom: 94vh;
    background-image: url(../img/bcg1.jpg);
@@ -14,6 +19,9 @@
    background-repeat: no-repeat;
    background-position: center;
  }
+
+
+
 
  #nav {
    display: flex;
@@ -64,15 +72,16 @@
  }
 
 #mainmenu a{
-  font-family: 'Cuprum', sans-serif;
-  font-size: 16px;
-  border-bottom: 1.5px solid rgba(209, 89, 89,0);
+  font-family: sans-serif;
+  font-size: 17.5px;
+
   transition: 0.3s;
 }
 
 #mainmenu a:hover{
   transition: 0.1s;
-  border-bottom: 1.5px solid rgba(237, 63, 63);
+
+  color: #272b2b;
 }
 
 .logo_vesta h1{
@@ -119,14 +128,13 @@ font-family: 'Cuprum', sans-serif;
 .make_order:hover{
   border: 2px solid #ed3f3f;
   background-color:  #ed3f3f;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .about_us  h2{
   margin-top: 5vh;
   margin-left: 7vw;
   font-size: 1.7em;
-  border: 1px solid black;
   width: 7vw;
 }
 
@@ -152,7 +160,8 @@ font-family: 'Cuprum', sans-serif;
   width: 15vw;
   font-size: 1.7em;
   padding: 7px;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
+  margin-bottom: 3vh;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
 }
@@ -246,7 +255,7 @@ display: flex;
 
 .flip-card h3{
   color: white;
-  font-family: 'Cuprum', sans-serif;;
+  font-family: 'Cuprum', sans-serif;
   font-size: 1.5em;
   background-color: white;
   color: black;
@@ -290,10 +299,6 @@ display: flex;
   transform: rotateY(180deg);
 }
 
-.flip-red-background{
-  background-color: #ed3f3f;
-}
-
 .service-list{
   width: 80%;
   margin-top: 3vh;
@@ -301,10 +306,10 @@ display: flex;
   font-size: 20px;
   font-family: sans-serif;
   color: white;
-  font-weight: bold;
 }
 
 .service-list li{
+
   margin-bottom: 2vh;
   list-style-type: square;
 }
@@ -320,7 +325,7 @@ display: flex;
       overflow: hidden;
       width: 80%;
       margin-left: 10%;
-      margin-bottom: 2vh;
+
     }
 
     .slider__wrapper {
@@ -384,9 +389,174 @@ display: flex;
     }
 
     .slider__item div {
+      height: 70vh;
       line-height: 70vh;
       font-size: 100px;
       text-align: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+
+.work-content{
+  margin-left: 25%;
+  display: block;
+  margin-bottom: 6VH;
+
+}
+
+.w-item{
+  display: flex;
+  background: linear-gradient(to right, black 0%, black 20%, transparent 20%, transparent 80%, black 80%, black 100%),
+              linear-gradient(to right, black 0%, black 20%, transparent 20%, transparent 80%, black 80%, black 100%),
+              linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 80%, black 80%, black 100%),
+              linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 80%, black 80%, black 100%);
+          background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
+          background-position: 0 0, 0 100%, 0 0, 100% 0;
+          background-repeat: no-repeat;
+  width: 50vw;
+}
+
+
+#fnt-awsm{
+  background-color: rgb(248, 251, 95);
+  padding: 19px 22px 19px 22px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.fa-handshake{
+  padding: 100px;
+}
+
+.w-text{
+  color: black;
+  font-size: 20px;
+  font-family:  sans-serif;
+  padding: 3%;
+}
+
+.w-icon{
+  display: flex;
+  margin-left: 11vw;
+
+}
+
+.w-icon h3{
+  align-self: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 1vw;
+}
+
+.contacts{
+  display: flex;
+  height: 70vh;
+  margin-top: 5vh;
+}
+
+.phone{
+  margin-top: 15vh;
+  margin-left: 7vw;
+}
+
+.phone-numbers{
+  width: 50%;
+  background-color: rgb(242, 241, 107);
+  height: 100%;
+}
+
+.phone-numbers h2{
+  font-size: 2em;
+  font-family: sans-serif;
+  margin-bottom: 5vh;
+}
+
+.phone-numbers ul{
+  list-style-type: none;
+}
+
+.map{
+  height: 100%;
+  width: 50vw;
+  background-color: rgb(83, 54, 210);
+}
+
+.numbers{
+  margin-bottom: 5vh;
+}
+
+.phone a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.soc-networks{
+  margin-top: 2vh;
+}
+
+.fa-telegram, .fa-instagram{
+  margin-left: 1vw;
+  font-size: 2rem;
+}
+
+footer{
+  background-color: rgb(29, 32, 28);
+  height: 20vh;
+  box-sizing: border-box;
+  padding-top: 6vh;
+}
+
+.footer-links{
+ display: flex;
+ justify-content: center;
+}
+
+.footer-links ul{
+ display: flex;
+ list-style-type: none;
+}
+
+.footer-links li{
+  margin-top: 2vh;
+}
+
+.footer-links a{
+  color: white;
+  font-size: 18px;
+  margin-left: 2vw;
+  font-family: sans-serif;
+}
+
+.footer-logo h1{
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Courgette', cursive;
+}
+
+.scrollup{
+width:45px;
+height:45px;
+opacity:0.6;
+position:fixed;
+bottom:50px;
+right:50px;
+display:none;
+text-indent:-9999px;
+background: url('../img/icon_top.png') no-repeat;
+color: white;
+}

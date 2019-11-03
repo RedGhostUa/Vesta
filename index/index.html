@@ -6,7 +6,37 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <script defer src="../fontawesome/all.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
 
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
+
+  });
+  </script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#mainmenu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
 </head>
 
 <body>
@@ -19,10 +49,10 @@
 
       <div id="mainmenu">
         <ul>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#aboutus">Идея</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#portfolio">Галерея</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </div>
     </div>
@@ -30,13 +60,17 @@
       <h1>Студия дизайна</h1>
       <p>Создание уникальных дизайнов для любых пространств в любом стиле</p>
     </div>
-    <div class="make_order">
-      <a href="#">Заказать проект</a>
-    </div>
+
+    <a href="#contacts">
+      <span class="make_order">
+        Сделать заказ
+      </span>
+    </a>
+
   </header>
   <main>
     <div class="about_us">
-      <h2 class="block-caption"> ИДЕЯ </h2>
+      <h2 class="block-caption" id="aboutus"> ИДЕЯ </h2>
       <div class="about_usphoto">
 
       </div>
@@ -49,7 +83,8 @@
     </div>
   </main>
 
-  <div class="services">
+  <div class="services" id="services">
+    <hr class="style-two">
     <h2 class="block-caption"> Наши услуги </h2>
     <div class="service_elements">
       <div class="flip-card first-card">
@@ -245,21 +280,21 @@
   </div>
 
 
-
-  <h2 class="block-caption slider-caption"> Галерея наших работ </h2>
+  <hr class="style-two">
+  <h2 class="block-caption slider-caption" id="portfolio"> Галерея наших работ </h2>
   <div class="slider">
     <div class="slider__wrapper">
       <div class="slider__item">
-        <div style="background-image: URL(../img/s2.jpg);">text</div>
+        <div style="background-color: rgb(70, 162, 129);"></div>
       </div>
       <div class="slider__item">
-        <div style="background-image: URL(../img/s4.jpg);">text</div>
+        <div style="background-color: rgb(177, 58, 79);"></div>
       </div>
       <div class="slider__item">
-        <div style="background-image: URL(../img/s3.jpg);">text</div>
+        <div style="background-color: rgb(36, 68, 91);"></div>
       </div>
       <div class="slider__item">
-        <div style="background-image: URL(../img/s1.jpg);">text</div>
+        <div style="background-color: rgb(242, 236, 136);"></div>
       </div>
     </div>
     <a class="slider__control slider__control_left" href="#" role="button"></a>
@@ -426,11 +461,178 @@
   <div class="portfolio-caption">
     <h2 class="block-caption"> Полное портфолио </h2>
   </div>
+  <hr class="style-two">
+  <h2 class="block-caption slider-caption"> Алгоритм нашей работы </h2>
 
 
+  <div>
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-mobile-alt" id="fnt-awsm" style="padding: 17px 22px 17px 22px;"></i>
+        <h3>Заказ услуги</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>Вы можете осуществить, позвонив по телефону 097-342-25-08 или оставив заявку на сайте www.vesta.com.ua</p>
+        </div>
 
 
+      </div>
+    </div>
 
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-car-alt" id="fnt-awsm"></i>
+        <h3>Первый выезд дизайнера на объект</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>На этом этапе дизайнер ознакамливается со стилистикой помещения, цветовым решением интерьера, узнает Ваши предпочтения и виденье по оформлению окон, обсуждается предпочтительный бюджет</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-archive" id="fnt-awsm"></i>
+        <h3>Подбор материалов</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>Дизайнер проводит отбор карнизов, тканей, аксессуаров непосредственно под Ваш интерьер, учитывая оговоренные на встрече предпочтения.</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-coins" id="fnt-awsm"></i>
+        <h3>Утверждение сметы и внесение предоплаты</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>На этом этапе Дизайнер просчитывает стоимость проекта (просчет выполняется по каждому помещению отдельно) и отправляет Заказчику на утверждение. После утверждения, Заказчиком вносится предоплата в размере 70-80% от суммы проекта.</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-tools" id="fnt-awsm"></i>
+        <h3>Монтаж карнизов/изготовление штор</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>В удобное для Вас время приедут мастера и произведут качественный монтаж карнизов.Параллельно запускается в работу пошив штор в профессиональном цеху, дизайнер осуществляет контроль производства.</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="fas fa-pencil-ruler" id="fnt-awsm"></i>
+        <h3>Навеска готовых изделий</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>Это заключительный этап сотрудничества, на котором производится отутюживание и навеска штор, а также производится полный расчет со стороны Заказчика.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="work-content">
+      <div class="w-icon">
+        <i class="far fa-handshake" id="fnt-awsm" style="padding: 20px;"></i>
+        <h3>Послепродажный сервис</h3>
+      </div>
+      <div class="w-item">
+
+        <div class="w-text">
+          <p>Сервис, который предполагает комплексные услуги по химчистке штор, портьер, гардин, тюля, ламбрекенов и других видов оконных занавесей.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="style-two" id="contacts">
+
+  <div class="contacts">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.939102648115!2d30.640512516056006!3d50.46085867947671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4daaee41f62e7%3A0xe7e45c9a67481f20!2z0JzQsNGA0LrQtdGCINC80L7Qu9C7INCU0LDRgNC40L3QvtC6!5e0!3m2!1sru!2sua!4v1572808033599!5m2!1sru!2sua"
+        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="yes"></iframe>
+    </div>
+    <div class="phone-numbers">
+      <div class="phone">
+      <h2>Контакты для связи</h2>
+      <div class="numbers">
+        <ul>
+          <li>
+            <a style="font-weight: bold;">Life:</a>
+            <a href="tel:+380 (97) 722 5555">+380 (97) 722 5555</a>
+          </li>
+          <li>
+            <a style="font-weight: bold;">Vodafone:</a>
+            <a href="tel:+380 (97) 722 5555">+380 (97) 722 5555</a>
+          </li>
+          <li>
+            <a style="font-weight: bold;">Kievstar:</a>
+            <a href="tel:+380 (97) 722 5555">+380 (97) 722 5555</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="mailto:willyghost.gw@gmail.com">willyghost.gw@gmail.com</a>
+      <div class="soc-networks">
+        <a href="">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer">
+    <div class="footer-links">
+      <div>
+      <ul>
+        <li><a href="#aboutus">Идея</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="footer-logo">
+        <h1>Vesta</h1>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="scrollup">Наверх</a>
 </body>
 
 </html>
