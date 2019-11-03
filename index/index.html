@@ -47,6 +47,16 @@ $(document).ready(function(){
   });
 });
 </script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#orders").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+</script>
 </head>
 
 <body>
@@ -629,7 +639,7 @@ $(document).ready(function(){
 <footer>
   <div class="footer">
     <div class="footer-links">
-      <div>
+      <div id="orders">
       <ul>
         <li><a href="#aboutus">Идея</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
